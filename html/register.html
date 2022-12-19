@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/all-style.css">
+    <link rel="stylesheet" href="../css/home-pre-style.css">
+    <link rel="stylesheet" href="../css/register-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Aplikasi</h1>
+        <p>Penjualan</p>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="home-pre.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="#register" class="active">Register</a>
+        <a href="about-us-pre.html">About Us</a>
+        <a href="contact-us-pre.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="content">
+        <form style="border:1px solid #ccc" method="get" action="login.html" onsubmit="return registerValidation()">
+            <div class="container">
+                <h1>Register</h1>
+                <p>Silakan isi form ini untuk membuat akun.</p>
+                <hr>
+                <label for="name"><b>Nama</b></label>
+                <input type="text" placeholder="Masukkan Name" name="name" required id="name">
+                <label for="address"><b>Alamat</b></label>
+                <input type="text" placeholder="Masukkan Address" name="address" required id="address">
+                <label for="birthdate"><b>Tanggal Lahir</b></label>
+                <input type="date" placeholder="Masukkan Tanggal Lahir" name="birthdate" required id="birthdate">
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Masukkan Email" name="email" required id="email">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Masukkan Password" name="psw" required id="password">
+                <label for="psw-repeat"><b>Ulangi Password</b></label>
+                <input type="password" placeholder="Ulangi Password" name="psw-repeat" required
+                    id="confirmationPassword">
+                <label for="phone-number"><b>Nomor Telepon</b></label>
+                <input type="text" placeholder="Masukkan Tanggal Lahir" name="phone-number" required id="phoneNumber">
+                <label>
+                    <input type="checkbox" name="remember" style="margin-bottom:15px" id="termsAndCondition"> Remember
+                    me
+                </label>
+                <p>Dengan membuat akun, Anda menyetujui <a href="#" style="color:dodgerblue">Syarat & Privasi</a>.</p>
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn"><a href="home-pre.html">Cancel</a></button>
+                    <input type="submit" value="Register" class="signupbtn">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../js/all-script.js"></script>
+<script src="../js/register-script.js"></script>
+
+</html>

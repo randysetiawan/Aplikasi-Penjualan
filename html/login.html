@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/all-style.css">
+    <link rel="stylesheet" href="../css/home-pre-style.css">
+    <link rel="stylesheet" href="../css/login-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Aplikasi</h1>
+        <p>Penjualan</p>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="home-pre.html">Home</a>
+        <a href="#login" class="active">Login</a>
+        <a href="register.html">Register</a>
+        <a href="about-us-pre.html">About Us</a>
+        <a href="contact-us-pre.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="content">
+        <form method="get" action="home-post.html" onsubmit="return loginValidation()">
+            <div class="imgcontainer">
+                <img src="../assets/avatar.png" class="avatar">
+            </div>
+            <div class="container">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Masukkan Email" name="email" required id="email">
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Masukkan Password" name="psw" required id="password">
+                <input type="submit" value="Login" class="loginbtn">
+                <label>
+                    <input type="checkbox" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn"><a href="home-pre.html">Cancel</a></button>
+                <span class="psw">Register <a href="#">here</a></span>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="../js/all-script.js"></script>
+<script src="../js/login-script.js"></script>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Penjualan</title>
+    <link rel="stylesheet" href="../css/all-style.css">
+    <link rel="stylesheet" href="../css/data-management-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Aplikasi</h1>
+        <p>Penjualan</p>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="home-post.html">Home</a>
+        <a href="manajemen-user.html">Manajemen User</a>
+        <a href="#data-penjualan" class="active">Data Penjualan</a>
+        <a href="data-customer.html">Data Customer</a>
+        <a href="data-produk.html">Data Produk</a>
+        <a href="about-us-post.html">About Us</a>
+        <a href="contact-us-post.html">Contact Us</a>
+        <a href="home-pre.html">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="content-table">
+            <h1>Data Penjualan</h1>
+            <input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search for dates..">
+            <table id="myTable">
+                <tr>
+                    <th>No.</th>
+                    <th onclick="sortTable(1)">Date</th>
+                    <th>Customer</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>05-07-2022</td>
+                    <td>George Washington</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>06-07-2022</td>
+                    <td>John Adams</td>
+                </tr><tr>
+                    <td>3.</td>
+                    <td>07-07-2022</td>
+                    <td>Thomas Jefferson</td>
+                </tr><tr>
+                    <td>4.</td>
+                    <td>08-07-2022</td>
+                    <td>James Madison</td>
+                </tr><tr>
+                    <td>5.</td>
+                    <td>09-07-2022</td>
+                    <td>James Monroe</td>
+                </tr><tr>
+                    <td>6.</td>
+                    <td>10-07-2022</td>
+                    <td>John Quincy Adams</td>
+                </tr><tr>
+                    <td>7.</td>
+                    <td>11-07-2022</td>
+                    <td>Andrew Jackson</td>
+                </tr><tr>
+                    <td>8.</td>
+                    <td>12-07-2022</td>
+                    <td>Martin Van Buren</td>
+                </tr><tr>
+                    <td>9.</td>
+                    <td>13-07-2022</td>
+                    <td>William Henry Harrison</td>
+                </tr><tr>
+                    <td>10.</td>
+                    <td>14-07-2022</td>
+                    <td>John Tyler</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="../js/all-script.js"></script>
+<script src="../js/data-management-script.js"></script>
+
+</html>

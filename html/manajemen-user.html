@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manajemen User</title>
+    <link rel="stylesheet" href="../css/all-style.css">
+    <link rel="stylesheet" href="../css/data-management-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Aplikasi</h1>
+        <p>Penjualan</p>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="home-post.html">Home</a>
+        <a href="#manajemen-user" class="active">Manajemen User</a>
+        <a href="data-penjualan.html">Data Penjualan</a>
+        <a href="data-customer.html">Data Customer</a>
+        <a href="data-produk.html">Data Produk</a>
+        <a href="about-us-post.html">About Us</a>
+        <a href="contact-us-post.html">Contact Us</a>
+        <a href="home-pre.html">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="content-table">
+            <h1>Manajemen Data User</h1>
+            <input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search for names..">
+            <table id="myTable">
+                <tr>
+                    <th>No.</th>
+                    <th onclick="sortTable(1)">Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Birthdate</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Administrator</td>
+                    <td>admin@email.com</td>
+                    <td>Jakarta Barat</td>
+                    <td>04-07-1776</td>
+                    <td>081234567890</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Randy Setiawan</td>
+                    <td>randysetiawan612@gmail.com</td>
+                    <td>Jakarta Barat</td>
+                    <td>07-12-2001</td>
+                    <td>089512345678</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Annas Sigit Adityo Mulyo</td>
+                    <td>annas@email.com</td>
+                    <td>Bekasi</td>
+                    <td>12-07-1998</td>
+                    <td>080987654321</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Hansen Lee</td>
+                    <td>hansen@email.com</td>
+                    <td>Jakarta Utara</td>
+                    <td>08-01-2002</td>
+                    <td>081029384756</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Mario Leonardi Tan</td>
+                    <td>mario@email.com</td>
+                    <td>Jakarta Pusat</td>
+                    <td>03-03-2002</td>
+                    <td>085748392011</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Herald Corenius Law Repi</td>
+                    <td>herald@email.com</td>
+                    <td>Jakarta Timur</td>
+                    <td>21-02-2002</td>
+                    <td>082934578293</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>Bagas Khara Pratama</td>
+                    <td>bagas@email.com</td>
+                    <td>Makassar</td>
+                    <td>05-11-2002</td>
+                    <td>083489582398</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>Achmad Fakhri Irawan</td>
+                    <td>achmad@email.com</td>
+                    <td>Bogor</td>
+                    <td>15-04-2002</td>
+                    <td>083478578322</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>Jason Kiswanto</td>
+                    <td>jason@email.com</td>
+                    <td>Surabaya</td>
+                    <td>02-01-2002</td>
+                    <td>082389427893</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>Thomas Adhika Kurnia</td>
+                    <td>thomas@email.com</td>
+                    <td>Jakarta Selatan</td>
+                    <td>29-10-2002</td>
+                    <td>083478957811</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="../js/all-script.js"></script>
+<script src="../js/data-management-script.js"></script>
+
+</html>

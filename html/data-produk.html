@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Produk</title>
+    <link rel="stylesheet" href="../css/all-style.css">
+    <link rel="stylesheet" href="../css/data-management-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Aplikasi</h1>
+        <p>Penjualan</p>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="home-post.html">Home</a>
+        <a href="manajemen-user.html">Manajemen User</a>
+        <a href="data-penjualan.html">Data Penjualan</a>
+        <a href="data-customer.html">Data Customer</a>
+        <a href="#data-produk" class="active">Data Produk</a>
+        <a href="about-us-post.html">About Us</a>
+        <a href="contact-us-post.html">Contact Us</a>
+        <a href="home-pre.html">Logout</a>
+        <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="content">
+        <div class="content-table">
+            <h1>Data Produk</h1>
+            <input type="text" id="myInput" onkeyup="searchTable()" placeholder="Search for names..">
+            <table id="myTable">
+                <tr>
+                    <th>No.</th>
+                    <th onclick="sortTable(1)">Name</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Laptop</td>
+                    <td>Rp 7.500.000</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Handphone</td>
+                    <td>Rp 3.000.000</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Tablet</td>
+                    <td>Rp 5.000.000</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Komputer</td>
+                    <td>Rp 6.000.000</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Mouse</td>
+                    <td>Rp 200.000</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Keyboard</td>
+                    <td>Rp 400.000</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>Monitor</td>
+                    <td>Rp 2.000.000</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>Speaker</td>
+                    <td>Rp 750.000</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>Mousepad</td>
+                    <td>Rp 50.000</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>Microphone</td>
+                    <td>Rp 500.000</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="../js/all-script.js"></script>
+<script src="../js/data-management-script.js"></script>
+
+</html>
